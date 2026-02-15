@@ -1,0 +1,72 @@
+# 소설 창작 멀티 에이전트 시스템 설정
+
+# 프로젝트 설정
+project:
+  default_language: "ko"
+  output_dir: "projects"
+  templates_dir: "templates"
+
+# 에이전트 설정
+agents:
+  # 에이전트 타입 매핑 (Copilot CLI sub-agent types)
+  agent_types:
+    main_writer: "general-purpose"
+    story_writer: "general-purpose"
+    character_writer: "general-purpose"
+    setting_writer: "general-purpose"
+    prose_writer: "general-purpose"
+    dialogue_writer: "general-purpose"
+    action_writer: "general-purpose"
+    emotion_writer: "general-purpose"
+    editorial_team: "task"
+    feedback_agent: "task"
+    genre_specialist: "task"
+    research_agent: "explore"
+    pacing_manager: "task"
+  
+  # 에이전트 실행 시간 제한 (초)
+  timeout:
+    planning: 300  # 5분
+    writing: 600   # 10분
+    review: 180    # 3분
+
+# 워크플로우 설정
+workflow:
+  # Phase 1: 기획 단계
+  phase1:
+    parallel_agents: ["story_writer", "character_writer", "setting_writer"]
+    review_cycles: 2  # 피드백 사이클 횟수
+  
+  # Phase 2: 집필 단계
+  phase2:
+    chapters_per_batch: 1  # 한 번에 처리할 챕터 수
+    review_per_chapter: true
+  
+  # Phase 3: 완성 단계
+  phase3:
+    final_review_cycles: 3
+
+# 출력 형식 설정
+output:
+  markdown:
+    encoding: "utf-8"
+    line_break: "\n"
+    include_metadata: true
+  
+  json:
+    indent: 2
+    ensure_ascii: false
+    include_timestamps: true
+
+# 로깅 설정
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  save_to_file: true
+  log_dir: "logs"
+
+# 성능 설정
+performance:
+  rate_limit_delay: 2.0  # 에이전트 호출 간 딜레이 (초)
+  max_retries: 3
+  retry_delay: 5.0

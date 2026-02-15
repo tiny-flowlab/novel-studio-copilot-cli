@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Novel Project Metadata",
+  "type": "object",
+  "required": ["project_id", "title", "created_at", "status", "language"],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "description": "프로젝트 고유 ID"
+    },
+    "title": {
+      "type": "string",
+      "description": "소설 제목"
+    },
+    "author": {
+      "type": "string",
+      "description": "작가 이름"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "생성 시간"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "최종 수정 시간"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["planning", "writing", "reviewing", "completed"],
+      "description": "프로젝트 상태"
+    },
+    "genre": {
+      "type": "string",
+      "description": "장르"
+    },
+    "target_length": {
+      "type": "string",
+      "enum": ["short", "medium", "long"],
+      "description": "목표 길이"
+    },
+    "language": {
+      "type": "string",
+      "description": "언어 코드"
+    },
+    "workflow_phase": {
+      "type": "string",
+      "enum": ["phase1", "phase2", "phase3"],
+      "description": "현재 워크플로우 단계"
+    },
+    "agents_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "사용된 에이전트 목록"
+    },
+    "version": {
+      "type": "string",
+      "description": "프로젝트 버전"
+    }
+  }
+}

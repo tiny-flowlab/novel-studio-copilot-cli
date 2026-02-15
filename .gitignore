@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Project specific - IGNORE ALL USER PROJECTS
+projects/
+logs/
+*.log
+
+# Backups
+*.backup*
+*.tar.gz
+backups/
+
+# Documentation
+docs/
+
+# Temporary files
+*.tmp
+.novel-studio/
+session_summary.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git
+*.orig
