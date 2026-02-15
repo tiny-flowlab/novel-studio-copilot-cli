@@ -32,7 +32,7 @@ Other CLI tools are limited to code generation and terminal commands. **GitHub C
 ### Demo: Real Session Log
 
 ```
-$ cd copilot-novel-agent-team
+$ cd novel-studio-copilot-cli
 
   ┌─────────────────────────────────────────────────────────┐
   │  Novel Studio for Copilot CLI (Sales Representative)    │
@@ -105,7 +105,7 @@ This project is designed as a **Copilot CLI-native** multi-agent system. Every c
 Copilot CLI automatically reads `AGENTS.md` from the project root as a **custom instruction**. This file acts as the **Sales Representative** agent — the front door to the entire system. When a user opens Copilot CLI in this directory, AGENTS.md is injected into the system prompt, enabling the agent to greet the user, gather requirements, and route work to specialized agents.
 
 ```
-copilot-novel-agent-team/
+novel-studio-copilot-cli/
 └── AGENTS.md          ← Copilot CLI auto-loads this as custom_instruction
 ```
 
@@ -182,8 +182,8 @@ User → AGENTS.md (Sales Rep, auto-loaded)
 
 1. **Clone & Enter**:
    ```bash
-   git clone https://github.com/tiny-flowlab/copilot-novel-agent-team.git
-   cd copilot-novel-agent-team
+   git clone https://github.com/tiny-flowlab/novel-studio-copilot-cli.git
+   cd novel-studio-copilot-cli
    ```
 
 2. **Run Copilot**:
@@ -254,7 +254,7 @@ projects/first_love/
 ### Directory Structure
 
 ```
-copilot-novel-agent-team/
+novel-studio-copilot-cli/
 ├── AGENTS.md                    ← Sales Representative (auto-loaded by Copilot CLI)
 ├── WORKFLOW_GUIDE.md            ← Workflow definitions
 ├── config.yaml                  ← Agent configuration

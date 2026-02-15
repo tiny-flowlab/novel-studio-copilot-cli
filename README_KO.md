@@ -98,8 +98,8 @@ Copilot CLI가 프로젝트 루트의 `AGENTS.md`를 **custom_instruction**으�
 ### Step 1: 클론 및 이동
 
 ```bash
-git clone https://github.com/tiny-flowlab/copilot-novel-agent-team.git
-cd copilot-novel-agent-team
+git clone https://github.com/tiny-flowlab/novel-studio-copilot-cli.git
+cd novel-studio-copilot-cli
 ```
 
 ### Step 2: Copilot CLI 실행
