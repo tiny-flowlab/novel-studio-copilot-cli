@@ -39,10 +39,17 @@ ENV/
 htmlcov/
 .tox/
 
-# Project specific - IGNORE ALL USER PROJECTS
+# Project specific - IGNORE ALL USER PROJECTS except demo projects
 projects/
+!projects/ko/
+projects/ko/*
+!projects/ko/first_love_001/
+!projects/love_story_heroes/
 logs/
 *.log
+
+# Asciinema recordings
+*.cast
 
 # Backups
 *.backup*

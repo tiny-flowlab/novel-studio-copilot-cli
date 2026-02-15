@@ -83,6 +83,26 @@ User: A
        Output:  projects/first_love/phase3_final/novel_final.md
 ```
 
+## 📚 Demo & Sample Projects
+
+This repository includes pre-built demo projects showcasing the system in action:
+
+### 🌸 `first_love_001` — Korean College Romance
+- **Language**: Korean (한국어)
+- **Genre**: College Romance (대학 로맨스)
+- **Status**: Completed demo project
+- **Location**: `projects/ko/first_love_001/`
+- **Sample Output**: See chapters and planning docs in the folder
+
+### 💫 `love_story_heroes` — English Fantasy Adventure
+- **Language**: English
+- **Genre**: Fantasy / Adventure (복합 장르)
+- **Status**: New multi-genre project
+- **Location**: `projects/love_story_heroes/`
+- **Demonstrates**: Bilingual agent system (English/Korean), multi-genre planning, advanced character dynamics
+
+These sample projects are included in Git to help you understand the system's output format, quality level, and workflow organization.
+
 ### Key Features
 
 - ✅ **Fully Automated**: Start with just "Write me a novel"
